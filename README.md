@@ -1,1 +1,3 @@
-# chess-system-java
+# Chess Game in Java
+
+The readme will be updated at the end of the project...
