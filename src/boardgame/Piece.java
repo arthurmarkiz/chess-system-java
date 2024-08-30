@@ -1,15 +1,11 @@
 package boardgame;
 
-public class Piece {
+public abstract class Piece {
 
-    // Uma peça tem uma Position.
     protected Position position;
 
-    // Uma peça está/tem em/um Board.
     private Board board;
 
-    // Toda Piece inicia com um Board,
-    // porém ainda não tem uma Position específica.
     public Piece(Board board) {
         this.board = board;
         position = null;
@@ -17,5 +13,23 @@ public class Piece {
 
     protected Board getBoard() {
         return board;
+    }
+
+    public abstract boolean[][] possibleMoves();
+
+    public boolean possibleMove(Position position) {
+        return possibleMoves()[position.getRow()][position.getColumn()];
+    }
+
+    public boolean isThereAnyPossibleMove() {
+        boolean[][] mat = possibleMoves();
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = 0; j < mat.length; j++) {
+                if (mat[i][j]) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
