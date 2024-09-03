@@ -56,17 +56,29 @@ There is one player with the ⚪ **white** pieces and one with the ⚫ **black**
 ## ⚙ How to run this project
 
 ### In your terminal:
-1. **`git clone https://github.com/arthurmarkiz/chess-system-java.git`**
-2. `cd chess-system-java/src`
-3. `javac app/Main.java`
-4. `java app/Main`
+
+```bash
+git clone https://github.com/arthurmarkiz/chess-system-java.git
+```
+
+```bash
+cd chess-system-java/src
+```
+
+```bash
+javac app/Main.java
+```
+
+```bash
+java app/Main
+```
 
 <br/>
 
 ## Known Issues
 1. The king can be captured and this will generate an error, breaking the program. <br/><br/>
 
-❗ Please, if you spot any errors, open an issue ❗
+❗ Please, if you spot any errors, open a Discussion ❗
 
 <hr/>
 
